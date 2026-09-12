@@ -1,8 +1,8 @@
 ![Analytics Pipeline CI](https://github.com/CodePerfectionist-V/ecommerce-analytics-pipeline/actions/workflows/ci.yml/badge.svg?branch=main)
 
-# E-Commerce Data Engineering & Analytics Pipeline
+# E-Commerce Analytics Engineering Pipeline
 
-An enterprise-grade, modular Python and dbt ETL pipeline designed to ingest, clean, transform, and visualize raw e-commerce transaction data. Built with production standards including structured logging, robust error handling, dynamic pathing, and analytics-ready dbt seed integration.
+An enterprise-grade, modular Python and dbt transformation pipeline designed to ingest, clean, model, and visualize raw e-commerce transaction data. Built to modern Analytics Engineering and DataOps standards, featuring Medallion data modeling, automated schema assertions, dynamic pathing, and dbt seed integration.
 
 ## 🏗️ Architecture & Project Layout
 
