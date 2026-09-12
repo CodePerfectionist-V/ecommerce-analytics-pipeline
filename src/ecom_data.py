@@ -59,6 +59,7 @@ def clean_ecommerce_data(
     # 2. Currency Formatting & Sentinel Outlier Neutralization
     df["Revenue"] = df["Revenue"].astype(str).str.replace("$", "", regex=False)
     df["Revenue"] = pd.to_numeric(df["Revenue"], errors="coerce")
+    df["Revenue"] = df["Revenue"].round(2)
 
     outliers_detected = (df["Revenue"] == 999999.0).sum()
     if outliers_detected > 0:
