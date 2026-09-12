@@ -20,6 +20,7 @@ ecommerce-data-pipeline/
 ├── LICENSE                        # MIT License
 ├── README.md                      # Project documentation
 └── requirements.txt               # Environment dependencies
+```
 
 ## 🛠️ Tech Stack & Key Tools
 Language: Python 3.10+
