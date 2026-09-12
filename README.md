@@ -1,4 +1,3 @@
-```markdown
 ![Analytics Pipeline CI](https://github.com/CodePerfectionist-V/ecommerce-analytics-pipeline/actions/workflows/ci.yml/badge.svg?branch=main)
 
 # E-Commerce Data Engineering & Analytics Pipeline
@@ -48,14 +47,14 @@ An enterprise-grade, modular Python and dbt ETL pipeline designed to ingest, cle
 
 
 ### Data Quality Assertions & Testing Matrix
-```
+
 | Layer | Target Model | Key Assertions (`dbt test`) | Business Rule Enforced |
 | --- | --- | --- | --- |
 | Silver | `stg_customers` | `unique`, `not_null` (`customer_id`) | Primary key integrity |
 | Silver | `stg_orders` | `accepted_values` (`status`) | Valid status domain (`completed`, `shipped`, `pending`) |
 | Gold | `fct_orders` | `relationships` (`customer_id` -> `dim_customers`) | Referential integrity between facts & dimensions |
 | Gold | `dim_customers` | `expression_is_true` (`lifetime_value >= 0`) | Non-negative financial metrics |
-```
+
 ### Repository Directory Structure
 
 ```text
