@@ -1,0 +1,6 @@
+Set-Content -Path analytics/profiles.yml -Value 'analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: dev.duckdb'

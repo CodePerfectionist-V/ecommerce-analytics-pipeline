@@ -31,4 +31,4 @@ jobs:
       - name: Run dbt Build and Data Quality Assertions
         run: |
           cd analytics
-          dbt build
+          dbt build --profiles-dir .
