@@ -1,0 +1,16 @@
+# Virtual Environments
+ae_env/
+pyvenv.cfg
+
+# Executables & Local Databases
+*.exe
+*.duckdb
+
+# Runtime Logs & Caches
+logs/
+*.log
+__pycache__/
+
+# System Artifacts
+.DS_Store
+Thumbs.db
