@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_ecom_orders
+    description: "Standardized staging model derived from cleaned e-commerce transactions."
+    columns:
+      - name: customer_id
+        tests:
+          - not_null
+
+      - name: total_revenue_usd
+        tests:
+          - not_null
+
+  - name: fct_category_performance
+    description: "Mart model aggregating revenue, unique customer counts, and transaction density by category."
+    columns:
+      - name: category_name
+        tests:
+          - unique
+          - not_null
