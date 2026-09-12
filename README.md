@@ -5,19 +5,21 @@ An enterprise-grade, modular Python and dbt ETL pipeline designed to ingest, cle
 
 # Plaintext
 
+```text
 ecommerce-data-pipeline/
-├── analytics/                  # dbt analytics transformation layer
-│   ├── models/                 # Analytical data models
-│   ├── seeds/                  # Cleaned data target for dbt ingestion
-│   │   └── cleaned_ecom_data.csv
-│   └── dev.duckdb              # Embedded analytical database
-├── reports/                    # Auto-generated visualization artifacts
+├── analytics/                     # dbt analytics transformation layer
+│   ├── models/                    # Analytical data models (staging & marts)
+│   └── seeds/                     # Cleaned dataset target for dbt ingestion
+│       └── cleaned_ecom_data.csv
+├── reports/                       # Auto-generated visualization artifacts
 │   ├── category_revenue.png
 │   └── weekly_revenue_trends.png
-├── src/                        # Modular Python source modules
-│   └── ecom_data.py            # Primary ETL execution script
-├── .gitignore                  # Production Git ignore rules
-└── README.md                   # Technical documentation
+├── src/                           # Modular Python source modules
+│   └── ecom_data.py               # Primary ETL execution script
+├── .gitignore                     # Production Git ignore rules
+├── LICENSE                        # MIT License
+├── README.md                      # Project documentation
+└── requirements.txt               # Environment dependencies
 
 ## 🛠️ Tech Stack & Key Tools
 Language: Python 3.10+
